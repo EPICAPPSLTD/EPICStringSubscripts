@@ -10,6 +10,7 @@ import Foundation
 
 extension String {
   
+    //MARK: - Indexes
     // A wrapper for using string subscripts with `Int` instead of `String.Index` indexes
     subscript(index: Int) -> String {
         get {
@@ -23,6 +24,7 @@ extension String {
         }
     }
     
+    //MARK: - Ranges
     // A wrapper for using string subscripts with `Int` instead of `String.Index` ranges
     subscript(range: Range<Int>) -> String {
         get {
