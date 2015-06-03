@@ -11,23 +11,5 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //MARK: - view
-    var castedView : View {
-        return self.view as! View;
-    }
-    
-    //MARK: - lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    //MARK: - memory
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

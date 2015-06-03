@@ -15,7 +15,6 @@
 		8FF3A5111AD07DD800547D53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5011AD07DD800547D53 /* Images.xcassets */; };
 		8FF3A5131AD07DD800547D53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5081AD07DD800547D53 /* LaunchScreen.xib */; };
 		8FF3A5141AD07DD800547D53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3A5091AD07DD800547D53 /* Main.storyboard */; };
-		8FF3A5151AD07DD800547D53 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A50D1AD07DD800547D53 /* View.swift */; };
 		8FF3A5541AD0837500547D53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3A5531AD0837500547D53 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +40,6 @@
 		8FF3A5041AD07DD800547D53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF3A5081AD07DD800547D53 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		8FF3A5091AD07DD800547D53 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8FF3A50D1AD07DD800547D53 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		8FF3A5531AD0837500547D53 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,25 +61,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8F7F211E1AD2D8C9004BBD8B /* Globals */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Globals;
-			sourceTree = "<group>";
-		};
-		8F7F211F1AD2E08F004BBD8B /* Datasources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Datasources;
-			sourceTree = "<group>";
-		};
 		8FF3A4481AD068DD00547D53 = {
 			isa = PBXGroup;
 			children = (
 				8FF3A4EC1AD07DD800547D53 /* Project */,
-				8FFAB0521AD319A2009DF10E /* ThirdParty */,
 				8FF3A4E71AD07DA200547D53 /* Tests */,
 				8FF3A4521AD068DD00547D53 /* Products */,
 			);
@@ -110,11 +93,7 @@
 			children = (
 				8F8C3E081AD92CBA00CB431E /* LICENCE.txt */,
 				8FF3A4ED1AD07DD800547D53 /* AppDelegate.swift */,
-				8F7F211E1AD2D8C9004BBD8B /* Globals */,
-				8FF3A4F41AD07DD800547D53 /* Factories */,
 				8FF3A4F31AD07DD800547D53 /* Extensions */,
-				8FF3A4F61AD07DD800547D53 /* Models */,
-				8FF3A50A1AD07DD800547D53 /* Views */,
 				8FF3A54F1AD0837500547D53 /* ViewControllers */,
 				8FF3A4FC1AD07DD800547D53 /* Resources */,
 			);
@@ -129,104 +108,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		8FF3A4F41AD07DD800547D53 /* Factories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Factories;
-			sourceTree = "<group>";
-		};
-		8FF3A4F61AD07DD800547D53 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8FF3A4FA1AD07DD800547D53 /* Protocols */,
-				8FF3A4F81AD07DD800547D53 /* Enums */,
-				8FF3A4FB1AD07DD800547D53 /* Structs */,
-				8FF3A4F91AD07DD800547D53 /* Managers */,
-				8F7F211F1AD2E08F004BBD8B /* Datasources */,
-				8FF3A51D1AD07E6E00547D53 /* Networking */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8FF3A4F81AD07DD800547D53 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		8FF3A4F91AD07DD800547D53 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		8FF3A4FA1AD07DD800547D53 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		8FF3A4FB1AD07DD800547D53 /* Structs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Structs;
-			sourceTree = "<group>";
-		};
 		8FF3A4FC1AD07DD800547D53 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				8FF3A5011AD07DD800547D53 /* Images.xcassets */,
 				8FF3A5031AD07DD800547D53 /* Plists */,
 				8FF3A5071AD07DD800547D53 /* Xibs */,
-				8FF3A4FD1AD07DD800547D53 /* Audio */,
-				8FF3A4FE1AD07DD800547D53 /* CoreData */,
-				8FF3A5001AD07DD800547D53 /* Fonts */,
-				8FF3A5021AD07DD800547D53 /* Localization */,
-				8FF3A5051AD07DD800547D53 /* Texts */,
-				8FF3A5061AD07DD800547D53 /* Videos */,
-				8FF3A4FF1AD07DD800547D53 /* Entitlements */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		8FF3A4FD1AD07DD800547D53 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
-		8FF3A4FE1AD07DD800547D53 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		8FF3A4FF1AD07DD800547D53 /* Entitlements */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entitlements;
-			sourceTree = "<group>";
-		};
-		8FF3A5001AD07DD800547D53 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		8FF3A5021AD07DD800547D53 /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Localization;
 			sourceTree = "<group>";
 		};
 		8FF3A5031AD07DD800547D53 /* Plists */ = {
@@ -235,20 +124,6 @@
 				8FF3A5041AD07DD800547D53 /* Info.plist */,
 			);
 			path = Plists;
-			sourceTree = "<group>";
-		};
-		8FF3A5051AD07DD800547D53 /* Texts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Texts;
-			sourceTree = "<group>";
-		};
-		8FF3A5061AD07DD800547D53 /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Videos;
 			sourceTree = "<group>";
 		};
 		8FF3A5071AD07DD800547D53 /* Xibs */ = {
@@ -260,74 +135,12 @@
 			path = Xibs;
 			sourceTree = "<group>";
 		};
-		8FF3A50A1AD07DD800547D53 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8FF3A50B1AD07DD800547D53 /* Cells */,
-				8FF3A50C1AD07DD800547D53 /* Components */,
-				8FF3A50D1AD07DD800547D53 /* View.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8FF3A50B1AD07DD800547D53 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		8FF3A50C1AD07DD800547D53 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		8FF3A51D1AD07E6E00547D53 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				8FF3A51F1AD07E9700547D53 /* Requests */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		8FF3A51F1AD07E9700547D53 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
 		8FF3A54F1AD0837500547D53 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8FF3A5501AD0837500547D53 /* ChildViewControllers */,
-				8FF3A5521AD0837500547D53 /* Segues */,
 				8FF3A5531AD0837500547D53 /* ViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		8FF3A5501AD0837500547D53 /* ChildViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ChildViewControllers;
-			sourceTree = "<group>";
-		};
-		8FF3A5521AD0837500547D53 /* Segues */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Segues;
-			sourceTree = "<group>";
-		};
-		8FFAB0521AD319A2009DF10E /* ThirdParty */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF3A5541AD0837500547D53 /* ViewController.swift in Sources */,
-				8FF3A5151AD07DD800547D53 /* View.swift in Sources */,
 				8FDFD32D1B1EE95000B55C47 /* String+Subscripts.swift in Sources */,
 				8FF3A50E1AD07DD800547D53 /* AppDelegate.swift in Sources */,
 			);
