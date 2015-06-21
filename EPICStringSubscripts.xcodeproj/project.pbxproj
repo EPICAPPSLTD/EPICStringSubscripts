@@ -187,7 +187,8 @@
 		8FF3A4491AD068DD00547D53 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = EPIC;
 				TargetAttributes = {
 					8FF3A4501AD068DD00547D53 = {
@@ -311,7 +312,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICStringSubscripts;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = AdHoc;
 		};
@@ -319,12 +322,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICStringSubscriptsTests;
 			};
 			name = AdHoc;
@@ -348,6 +348,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -412,6 +413,7 @@
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICStringSubscripts;
 			};
 			name = Debug;
@@ -423,7 +425,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Project/Resources/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICStringSubscripts;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -431,10 +435,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -442,6 +442,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICStringSubscriptsTests;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -451,12 +452,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.epic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = EPICStringSubscriptsTests;
 			};
 			name = Release;
