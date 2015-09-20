@@ -15,13 +15,12 @@ extension String {
     // A wrapper for using string subscripts with `Int` instead of `String.Index` indexes
     subscript(index: Int) -> String {
         get {
-            let index = advance(self.startIndex, index)
+            let index = self.startIndex.advancedBy(index)
             return String(self[index])
         }
         set(newValue) {
-            let index = advance(self.startIndex, index)
-            let range = index...index
-            self = stringByReplacingCharactersInRange(range, withString: newValue)
+            let index = self.startIndex.advancedBy(index)
+            self = stringByReplacingCharactersInRange(index...index, withString: newValue)
         }
     }
     
@@ -38,8 +37,8 @@ extension String {
     
     // Private utility for converting `Range<Int>` to `Range<String.Index>`
     private func stringRangeForIntRange(range:Range<Int>) -> Range<String.Index> {
-        let indexStart = advance(self.startIndex, range.startIndex)
-        let indexEnd = advance(self.startIndex, range.endIndex)
+        let indexStart = self.startIndex.advancedBy(range.startIndex)
+        let indexEnd = self.startIndex.advancedBy(range.endIndex)
         return indexStart..<indexEnd
     }
     
