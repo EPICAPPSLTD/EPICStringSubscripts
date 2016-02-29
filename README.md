@@ -31,7 +31,7 @@ string[0..<5] = "Goodbye" // string is now 'Goodbye?'
 ```
 
 This class serves as an extension to the tutorial of the blog article: ["Subscripting Shortcuts"](TODO).
-Usage is free for all based on the attached license details, if you find this code useful, please consider [making a donation](http://epic-apps.uk/donations/). :)
+Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](helloworld@epic-apps.uk)! :)
 
 Copyright (c) EPIC 
 [www.epic-apps.uk](www.epic-apps.uk)
