@@ -30,7 +30,7 @@ string[5...6] = "?" // string is now 'Hello?'
 string[0..<5] = "Goodbye" // string is now 'Goodbye?'
 ```
 
-This class serves as an extension to the tutorial of the blog article: ["Subscripting Shortcuts"](TODO).
+This class serves as an extension to the tutorial of the blog article: ["Subscripting String Shortcuts"](http://epic-apps.uk/2015/06/03/subscripting-shortcuts/).
 Usage is free for all based on the attached license details, if you find this code useful, please consider [letting me know](helloworld@epic-apps.uk)! :)
 
 Copyright (c) EPIC 
